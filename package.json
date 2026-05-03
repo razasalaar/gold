@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "start": "node dist/server/server.js",
+    "start": "node .output/server/index.mjs",
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "NITRO_PRESET=vercel vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
